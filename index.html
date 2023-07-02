@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-Tracker</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e8dfc4dab2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="displayed">
+            <h3 class="month">Month</h3>
+            <br>
+            <div class="Balance">
+                <div class="row">
+                    <div class="col-lg-6">AVAILABLE</div>
+                    <div class="col-lg-6" id="remain">₹0.00</div>
+                </div>
+            </div>
+            <br>
+            <div class="income">
+                <div class="row">
+                    <div class="col-lg-6">INCOME</div>
+                    <div class="col-lg-6 showinc">₹0.00</div>
+                </div>
+            </div>
+            <div class="expense">
+                <div class="row">
+                    <div class="col-lg-6">EXPENSE</div>
+                    <div class="col-lg-4 showexp">₹0.00</div>
+                    <div class="col-lg-2 showper">-- %</div>
+
+                </div>
+            </div>
+            
+        </div>
+            <div class="row info-area">
+                <div class="col-sm-12 col-lg-2 todo">
+                    <select class="form-select" id="opt" required>
+                        <option selected value="inc">Add (+)</option>
+                        <option value="exp">Remove (-)</option>
+                    </select>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <input type="text" class="form-control dis" id="desc" placeholder="Add Description" required autocomplete="off" autofocus>
+                </div>
+                <div class="col-sm-12 col-lg-4 num">
+                    <input type="number" class="form-control" id="amount" placeholder="Amount" required>
+                </div>
+                <div class="col-sm-12 col-lg-2 d-grid mx-auto add">
+                    <button type="submit" class="btn btn-primary">ADD <i class="fa-solid fa-pen-to-square"></i> </button>
+                </div>
+            </div>
+            
+    </div>
+    <div class="show">
+        <div class="row lists">
+            <div class="col-lg-6 added">
+                <h1>INCOME</h1>
+                <div class="container-inc">
+                    
+                    <div class="row addItem" id="inc-0">
+                        <div class="col-6 description">Salary</div>
+                        <div class="col-4 amount">20000</div>
+                        <div class="col-2 delete" role="button"><i class="fa-regular fa-circle-xmark fa-xl"></i></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6 deduced">
+                <h1>EXPENSE</h1>
+                <div class="container-exp">
+            
+                    <div class="row removeItem" id="exp-0">
+                        <div class="col-6 description">Salary</div>
+                        <div class="col-4 amount">20000</div>
+                        <div class="col-2 delete" role="button"><i class="fa-regular fa-circle-xmark fa-xl"></i></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <i class="fab fa-github fa-xl"></i>
+        <i class="fab fa-discord fa-xl"></i>
+        <i class="fa-solid fa-envelope fa-xl"></i>
+        <p>© Basten 2023, Made with ❤️</p>
+    </div> -->
+
+    <script src="index.js"></script>
+</body>
+</html>

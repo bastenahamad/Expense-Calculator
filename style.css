@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+body {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    background-color: #3AA6B9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.show {
+    text-align: center;
+    margin: 0;
+}
+
+.added {
+    padding-top: 30px;
+    background-color: #FCE9F1;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.deduced {
+    padding-top: 30px;
+    background-color: #FCE9F1;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.info-area {
+    display: flex;
+    padding: 2% 15%;
+}
+
+.add {
+    width: 50%;
+}
+
+.income {
+    background-color: #C1ECE4;
+    width: 30%;
+    position: relative;
+    left: 35%;
+    box-shadow: 5px 5px 5px grey;
+    color: #59CE8F;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: x-large;
+}
+
+.expense {
+    background-color: #FFD0D0;
+    width: 30%;
+    position: relative;
+    left: 35%;
+    box-shadow: 5px 5px 5px grey;
+    color: #E64848;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: x-large;
+}
+
+.showper{
+    font-size: large;
+}
+
+.Balance {
+    width: 30%;
+    position: relative;
+    left: 35%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: xx-large;
+}
+
+.footer {
+    background-color: #FCE9F1;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.addItem{
+    background-color: #8EC3B0;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: x-large;
+    box-shadow: 3px 3px 3px grey;
+    color: #17594A;
+}
+
+.removeItem {
+    background-color: #FF8E9E;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: x-large;
+    box-shadow: 3px 3px 3px grey;
+    color: #E64848;
+}
+
+.fa-circle-xmark:hover {
+    color: red;
+}
+
+.container-inc {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.container-exp {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.fab {
+    padding-right: 30px;
+}
+
+.fa-discord:hover {
+    color:	#7289da;
+}
+
+.fa-github:hover {
+    color: #333;
+}
+
+.fa-envelope:hover {
+    color: #f2a60c;
+}
+
+.pressed {
+    opacity: 0.5;
+}
